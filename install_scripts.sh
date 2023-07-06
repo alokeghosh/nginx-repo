@@ -1,2 +1,2 @@
-mkdir -p aloke/ghosh
+mkdir -P aloke/ghosh
 echo "-----------------Welcome To RED Nginx WebSite ONE for devops blnlknzkCNxzNCxzCnZXCNk ------------------" > /home/azureadmin/aloke/ghosh/test
