@@ -1,0 +1,16 @@
+name: alokeghosh.nginx-repo (1)
+
+trigger: none
+
+# this pipeline will be triggered by another pipeline
+resources:
+  pipelines:
+  - pipeline: previous-pipeline-trigger   # Name of the pipeline resource
+    source: alokeghosh.nginx-repo # Name of the pipeline referenced by the pipeline resource
+    trigger: true # enable the trigger
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - script: echo This pipeline was set to be triggered after first pipeline completes.
