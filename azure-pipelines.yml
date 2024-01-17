@@ -1,0 +1,10 @@
+name: alokeghosh.nginx-repo
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo This pipeline runs first !
